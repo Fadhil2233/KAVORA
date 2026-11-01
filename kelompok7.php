@@ -56,19 +56,16 @@
         <!-- bagian nizhar -->
          <div class="container color-2 font-1">
             <h1 class="text-1">PRODUK KAMI</h1>
-             <form action="kelompok7.php" method="post">
+             <form action="kelompok7.php#produk" method="post"">
                  <div class="produk-form">
                      <div class="flex">
                         <input type="text" name="search800" placeholder="Telusuri produk lainnya">
-                        <button>Search</button>
+                        <button type="submit">Search</button>
                     </div>
                 </div>
              </form>
              <?php
-             if ($_SERVER["REQUEST_METHOD"]== "POST") {
-                $SEARCH = htmlspecialchars($_POST['search800']);
-                echo $SEARCH;
-             }
+             include '800.php';
              ?>
              <div class="flex card-container">
                  <div class="card">
@@ -123,7 +120,7 @@
          </form>
     </div>
 
-    <div class="footer-kelompok7">
+    <div class="footer-kelompok7" id="footer">
         <div class="footer-container font-1">
             <h1 class="footer-brand">KAVORA</h1>
             <div class="flex footer-grub">
@@ -137,15 +134,12 @@
                 <div class="footer-form">
                     <p class="footer-text">Dapatkan kabar terbaru dari KAVORA</p>
                     <div class="flex">
-                        <form action="kelompok7.php" method="post">
+                        <form action="kelompok7.php#footer" method="post">
                             <input type="email" name="email800" placeholder="Your email here">
                             <button type="submit">Subscribe</button>
                         </form>
                         <?php
-                        if ($_SERVER["REQUEST_METHOD"]== "POST") {
-                        $EMAIL = htmlspecialchars($_POST['email800']);
-                        echo $EMAIL;
-                        }
+                        include('800_ke2.php');
                         ?>
                     </div>
                 </div>
