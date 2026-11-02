@@ -29,8 +29,10 @@
                 <h1>NO.1 COFFEE BRAND IN ASIA</h1>
                 <p>KAVORA : Nyalakan Harimu, Teguk Inspirasimu</p>
                 <p>Hidup bergerak cepat, dan harimu butuh dorongan yang tepat. KAVORA hadir untuk<br> menemani setiap langkah kreatif dan ambisiusmu dari pagi yang sibuk hingga malam penuh ide.</p>
-                <a href="" class="button-1">Produk Kami</a>
-                <a href="" class="button-1">Lokasi</a>
+                <div class="hero-button">
+                    <a href="" class="button-1">Produk Kami</a>
+                    <a href="" class="button-1">Lokasi</a>
+                </div>
             </div>
             <img src="gambar/Kavora1 4per3.png" alt="GAMBAR BRAND" width="700" height="450">
         </div>
@@ -42,7 +44,7 @@
             <h1 class="text-1">ABOUT KAVORA</h1>
             <img src="gambar/Kavora2.png" alt="gambar" width="1120" height="400" class="rounded">
             <div class="about-text flex">
-                <h2>At Kavora, we believe great coffee is more than just a daily ritual. It's a moment to slow down, take a breath, and enjoy the little things.</h2>
+                <h2 class="about-text">At Kavora, we believe great coffee is more than just a daily ritual. It's a moment to slow down, take a breath, and enjoy the little things.</h2>
                 <p class="justify-text">Inspired by nature and crafted with care, we bring together quality coffee beans, thoughtful brewing, and a passion for creating meaningful moments in every cup.
                     Whether it's the start of a busy morning or a quiet afternoon, Kavora is here to make your everyday coffee feel a little more special.
                     Rooted in nature. Brewed with purpose. Made for you.</p>
@@ -52,7 +54,37 @@
 
     <div class="landing-full produk" id="produk">
         <!-- bagian nizhar -->
-        <h1>NIZHAR</h1>
+         <div class="container color-2 font-1">
+            <h1 class="text-1">PRODUK KAMI</h1>
+             <form action="kelompok7.php#produk" method="post"">
+                 <div class="produk-form">
+                     <div class="flex">
+                        <input type="text" name="search800" placeholder="Telusuri produk lainnya">
+                        <button type="submit">Search</button>
+                    </div>
+                </div>
+             </form>
+             <?php
+             include '800.php';
+             ?>
+             <div class="flex card-container">
+                 <div class="card">
+                     <img src="gambar/bijiarabika.jpg" alt="robusta" height="240px" width="240px">
+                     <h2>Arabika</h2>
+                     <p>Kopi dengan aroma harum dan cita rasa lembut.</p>
+                 </div>
+                 <div class="card">
+                     <img src="gambar/bijirobusta.jpg" alt="robusta" height="240px" width="240px">
+                     <h2>Robusta</h2>
+                     <p>Kopi dengan karakter rasa kuat dan pekat.</p>
+                 </div>
+                 <div class="card">
+                     <img src="gambar/bijiliberika.jpg" alt="robusta" height="240px" width="240px">
+                     <h2>Liberika</h2>
+                     <p>Kopi dengan karakter unik dan aroma khas.</p>
+                 </div>
+             </div>
+         </div>
     </div>
 
     <div class="landing-full review" id="review">
@@ -189,7 +221,33 @@
          </form>
     </div>
 
-    <div class="footer-kelompok7">
+    <div class="footer-kelompok7" id="footer">
+        <div class="footer-container font-1">
+            <h1 class="footer-brand">KAVORA</h1>
+            <div class="flex footer-grub">
+                <div class="grub-menu">
+                    <a href="" class="footer-menu">About KAVORA</a>
+                    <a href="" class="footer-menu">Careers</a>
+                    <a href="" class="footer-menu">Customer Care</a>
+                    <a href="" class="footer-menu">Customer Care</a>
+                    <a href="" class="footer-menu">Customer Care</a>
+                </div>
+                <div class="footer-form">
+                    <p class="footer-text">Dapatkan kabar terbaru dari KAVORA</p>
+                    <div class="flex">
+                        <form action="kelompok7.php#footer" method="post">
+                            <input type="email" name="email800" placeholder="Your email here">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <?php
+                        include('800_ke2.php');
+                        ?>
+                    </div>
+                </div>
+            </div>
+                <hr class="line">
+                <p>© 2026 KAVORA. All rights reserved.</p>
+        </div>
     </div>
 </body>
 </html>
