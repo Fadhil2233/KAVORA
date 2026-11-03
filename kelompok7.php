@@ -74,18 +74,62 @@
 
         <div class="landing-full contact" id="contact">
         <!-- bagian habib -->
-         <h1>HABIB</h1>
-         <form action="" method="post">
+         <div class="contact-heading">
+         <h1>------Hubungi Kami------</h1>
+         <p>Kami Siap Membantu</p>
+         </div>
+
+        <div class="contact-container">
+         <form action="kelompok7.php" method="POST"
+            class="contact-form">
+            <div class="form-grup">
              <label for="">Nama</label>
-             <input type="text" name="username">
+             <input type="text" name="username"
+             placeholder="Masukkan Nama Anda">
+             </div>
+
+             <div class="form-grup">
              <label for="">Email</label>
-             <input type="email" name="email">
+             <input type="email" name="email"
+              placeholder="Masukkan Email Anda">
+             </div>
+
+             <div class="form-grup">
              <label for="">No.Telephone</label>
-             <input type="tel" name="nomor">
+             <input type="tel" name="nomor"
+              placeholder="Masukkan Nomor Telephone">
+             </div>
+
+             <div class="form-grup">
              <label for="">Message</label>
-             <input type="textarea">
+             <input type="textarea" name="catatan"
+             placeholder="Tulis Pesan Anda">
+             </div>
+             
+             
              <button type="submit">Submit</button>
          </form>
+        
+        <div class="contact-image">
+        <img src="gambar/logo1.png" alt="Gambar">
+             </div>
+             </div>
+         <?php
+        if($_POST){
+            echo '<div class="pesan-sukses">';
+            echo '<h3> Pesan Berhasil dikirim </h3>';
+            echo '<hr>';
+            echo 'Nama:';
+            echo $_POST['username'];echo "<br>";
+            echo 'Email:';
+            echo $_POST['email'];echo "<br>";
+            echo 'No.Telp:';
+            echo $_POST['nomor'];echo "<br>";
+            echo 'Catatan:';
+            echo $_POST['catatan'];echo "<br>";
+            echo '</div>';
+         } 
+         ?>
     </div>
 
     <div class="footer-kelompok7">

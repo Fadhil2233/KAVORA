@@ -130,6 +130,56 @@ body {
 }
 
 /* habib css */
+.contact {
+    padding: 100px;
+    background: #F6F4EE;
+    color: #455238;
+}
+
+.contact-heading {
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+}
+
+.contact-form {
+    width :60%
+}
+.contact-image {
+    width: 40%;
+}
+.contact-image img {
+    width: 70%;
+}
+
+.form-grup {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.form-grup input {
+    width: 500px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.pesan-sukses{
+    background-color: #d4edda;
+    color: #155724;
+    padding: 8px;
+    width: 400px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 20px;
+   
+}
+
 /* akhir habib css */
 
 /* arafat css */
