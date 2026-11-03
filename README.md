@@ -1,1 +1,1 @@
-Projek Landing Page Kel7
+Projek Landing Page Kel7 (jadi web jir malahan aduhai)
