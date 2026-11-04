@@ -1,23 +1,34 @@
 <?php
 $SEARCH = '';
+$KATEGORI = '';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $SEARCH = htmlspecialchars($_POST['search800'] ?? '');
+    $SEARCH = htmlspecialchars(trim($_POST['search800'] ?? ''));
+    $KATEGORI = htmlspecialchars($_POST['kategori800'] ?? '');
 }
 ?>
     <div class="landing-full produk" id="produk">
         <!-- bagian nizhar -->
         <div class="container color-2 font-1">
             <h1 class="text-1">PRODUK KAMI</h1>
-            <form action="kelompok7.php?page=produk" method="post">
-                <div class=" produk-form">
-                    <div class="flex">
+            <form action="kelompok7.php?page=produk" method="POST">
+                <div class="produk-form">
+                    <div class="">
                         <input type="text" name="search800" placeholder="Telusuri produk lainnya" value="<?= $SEARCH ?>">
-                        <button type="submit">Search</button>
+                        <div class="flex">
+                            <select name="kategori800" id="kategori">
+                                <option value="" disabled selected>Kategori</option>
+                                <option value="Biji Kopi">Biji Kopi</option>
+                                <option value="Bubuk Kopi">Bubuk Kopi</option>
+                                <option value="Seduhan">Seduhan</option>
+                            </select>
+                            <button type="submit">Search</button>
+                        </div>
                     </div>
                 </div>
             </form>
         <?php if ($_SERVER["REQUEST_METHOD"] == "POST") { ?>
-            <p>Hasil pencarian: <?= $SEARCH ?></p>
+            <p>Hasil pencarian : <?= $SEARCH ?></p>
+            <p>Kategori : <?= $KATEGORI ?></p>
         <?php } ?>
             <div class="flex card-container">
                 <div class="card">
