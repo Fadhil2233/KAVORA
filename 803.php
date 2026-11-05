@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<div class="landing-full review" id="review">
+<div class="landing-full-kelompok7 review" id="review">
     <!-- bagian arafat -->
     <div class="review-container flex">
         <div class="review-list">
