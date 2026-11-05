@@ -16,6 +16,7 @@ $halaman = $_GET['page'] ?? 'home';
 
 <body>
     <div class="nav-kelompok7 color-1">
+        <!-- bagian nizhar -->
         <div class="logo">
             <h2>KAVORA</h2>
         </div>
@@ -29,7 +30,7 @@ $halaman = $_GET['page'] ?? 'home';
         </div>
     </div>
     <?php if ($halaman == 'home') { ?>
-        <div class="landing-full bg-0" id="home">
+        <div class="landing-full-kelompok7 bg-0" id="home">
             <div class="hero color-2">
                 <div class="hero-text">
                     <h1>NO.1 COFFEE BRAND IN ASIA</h1>
@@ -44,7 +45,7 @@ $halaman = $_GET['page'] ?? 'home';
             </div>
         </div>
 
-        <div class="landing-full about" id="about">
+        <div class="landing-full-kelompok7 about" id="about">
             <!-- bagian nizhar -->
             <div class="container color-2 font-1">
                 <h1 class="text-1">ABOUT KAVORA</h1>
@@ -91,7 +92,7 @@ $halaman = $_GET['page'] ?? 'home';
     </div>
     </div> -->
 
-        <div class="landing-full location" id="location">
+        <div class="landing-full-kelompok7 location" id="location">
             <!-- bagian nizhar -->
             <div class="container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.2799546461424!2d110.80504429999999!3d-7.5444182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a141e6090dc49%3A0x5dd0894249c2f99c!2sJl.%20Kutai%20Utara%20No.1%2C%20Sumber%2C%20Kec.%20Banjarsari%2C%20Kota%20Surakarta%2C%20Jawa%20Tengah%2057138!5e0!3m2!1sid!2sid!4v1793201279073!5m2!1sid!2sid"
@@ -110,6 +111,7 @@ $halaman = $_GET['page'] ?? 'home';
     <?php } elseif ($halaman == 'contact') { ?>
         <?php include("804.php"); ?>
     <?php } ?>
+
     <div class="footer-kelompok7" id="footer">
         <div class="footer-container font-1">
             <h1 class="footer-brand">KAVORA</h1>
