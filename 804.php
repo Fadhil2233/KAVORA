@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<div class="landing-full contact" id="contact">
+<div class="landing-full-kelompok7 contact" id="contact">
             <!-- bagian habib -->
             <div class="contact-heading color-2 font-1">
                 <h1>--- Hubungi Kami ---</h1>
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <div class="contact-container">
-                <form action="kelompok7.php?page=contact" method="POST" class="produk-form font-1">
+                <form action="kelompok7.php?page=contact" method="POST" class="produk-form-kelompok7 font-1">
                     <div class="form-grup">
                         <label for="">Nama</label>
                         <input type="text" name="username804"
