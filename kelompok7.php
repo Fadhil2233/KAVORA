@@ -8,6 +8,8 @@ $halaman = $_GET['page'] ?? 'home';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelompok7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -47,7 +49,7 @@ $halaman = $_GET['page'] ?? 'home';
 
         <div class="landing-full-kelompok7 about" id="about">
             <!-- bagian nizhar -->
-            <div class="container color-2 font-1">
+            <div class="container-kelompok7 color-2 font-1">
                 <h1 class="text-1">ABOUT KAVORA</h1>
                 <img src="gambar/Kavora2.png" alt="gambar" width="1120" height="400" class="rounded">
                 <div class="about-text flex">
@@ -94,7 +96,7 @@ $halaman = $_GET['page'] ?? 'home';
 
         <div class="landing-full-kelompok7 location" id="location">
             <!-- bagian nizhar -->
-            <div class="container">
+            <div class="container-kelompok7">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.2799546461424!2d110.80504429999999!3d-7.5444182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a141e6090dc49%3A0x5dd0894249c2f99c!2sJl.%20Kutai%20Utara%20No.1%2C%20Sumber%2C%20Kec.%20Banjarsari%2C%20Kota%20Surakarta%2C%20Jawa%20Tengah%2057138!5e0!3m2!1sid!2sid!4v1793201279073!5m2!1sid!2sid"
                     width="1480" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 <div class="text-didalam font-1 color-2">
