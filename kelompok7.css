@@ -205,7 +205,7 @@ margin-left: 10px;
     /* color: white; */
 }
 
-.container {
+.container-kelompok7 {
     position: relative;
     /* width: 100%;
     max-width: 500px; */
@@ -283,6 +283,21 @@ justify-content: space-between  ;
     border: none; 
     height: 2px; 
     background-color: #F6F4EE;
+}
+
+.uts {
+    background-color: #405039;
+}
+
+.foto-uts-800{
+    width: 100px;
+    height: 100px;
+}
+
+@media(min-width: 250px) and (max-width: 251px){
+    .foto-uts-800{
+        border-radius: 50%;
+    }
 }
 
 /* habib css */
