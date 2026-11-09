@@ -16,56 +16,91 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $KATEGORI = htmlspecialchars($_POST['kategori800'] ?? '');
 }
 ?>
-    <div class="landing-full-kelompok7 produk" id="produk">
-        <!-- bagian nizhar -->
-        <div class="container color-2 font-1">
-            <h1 class="text-1">PRODUK KAMI</h1>
-            <form action="kelompok7.php?page=produk" method="POST">
-                <div class="produk-form-kelompok7">
-                    <div class="">
-                        <div class="flex">
-                            <input type="text" name="search800" placeholder="Telusuri produk lainnya" value="<?= $SEARCH ?>">
-                            <input type="text" name="kode800" placeholder="Kode Produk" value="<?= $KODE ?>">
-                        </div>
-                        <div class="flex">
-                            <input type="text" name="nama800" placeholder="Nama Produk" value="<?= $NAMA ?>">
-                            <input type="text" name="harga800" placeholder="Harga Produk" value="<?= $HARGA ?>">
-                            <input type="text" name="stok800" placeholder="Stok Produk" value="<?= $STOK ?>">
-                            <input type="textarea" name="deskripsi800" placeholder="Deskripsi Produk" value="<?= $DESKRIPSI ?>">
-                        </div>
-                        <div class="flex">
-                            <select name="kategori800" id="kategori">
-                                <option value="" disabled selected>Kategori</option>
-                                <option value="Biji Kopi">Biji Kopi</option>
-                                <option value="Bubuk Kopi">Bubuk Kopi</option>
-                                <option value="Seduhan">Seduhan</option>
-                            </select>
-                            <button type="submit">Kirim</button>
-                        </div>
+<div class="landing-full-kelompok7 produk" id="produk">
+    <!-- bagian nizhar -->
+    <div class="container-kelompok7 color-2 font-1">
+        <h1 class="text-1">PRODUK KAMI</h1>
+        <div class="foto-uts-800 bg-primary">
+            Photo
+        </div>
+        <form action="kelompok7.php?page=produk" method="POST">
+            <div class="produk-form-kelompok7">
+                <div class="">
+                    <div class="flex">
+                        <input type="text" name="search800" placeholder="Telusuri produk lainnya" value="<?= $SEARCH ?>">
+                        <input type="text" name="kode800" placeholder="Kode Produk" value="<?= $KODE ?>">
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="nama800" placeholder="Nama Produk" value="<?= $NAMA ?>">
+                        <input type="text" name="harga800" placeholder="Harga Produk" value="<?= $HARGA ?>">
+                        <input type="text" name="stok800" placeholder="Stok Produk" value="<?= $STOK ?>">
+                        <input type="textarea" name="deskripsi800" placeholder="Deskripsi Produk" value="<?= $DESKRIPSI ?>">
+                    </div>
+                    <div class="flex">
+                        <select name="kategori800" id="kategori">
+                            <option value="" disabled selected>Kategori</option>
+                            <option value="Biji Kopi">Biji Kopi</option>
+                            <option value="Bubuk Kopi">Bubuk Kopi</option>
+                            <option value="Seduhan">Seduhan</option>
+                        </select>
+                        <button type="submit">Kirim</button>
                     </div>
                 </div>
-            </form>
+            </div>
+        </form>
         <?php if ($_SERVER["REQUEST_METHOD"] == "POST") { ?>
             <p>Hasil pencarian : <?= $SEARCH ?> | Kode : <?= $KODE ?></p>
             <p>Nama : <?= $NAMA ?> | Harga : <?= $HARGA ?> | Stok : <?= $STOK ?></p>
             <p>Kategori : <?= $KATEGORI ?> | Deskripsi : <?= $DESKRIPSI ?></p>
         <?php } ?>
-            <div class="flex card-container">
-                <div class="card-kelompok7">
-                    <img src="gambar/bijiarabika.jpg" alt="robusta" height="240px" width="240px">
-                    <h2>Arabika</h2>
-                    <p>Kopi dengan aroma harum dan cita rasa lembut.</p>
-                </div>
-                <div class="card-kelompok7">
-                    <img src="gambar/bijirobusta.jpg" alt="robusta" height="240px" width="240px">
-                    <h2>Robusta</h2>
-                    <p>Kopi dengan karakter rasa kuat dan pekat.</p>
-                </div>
-                <div class="card-kelompok7">
-                    <img src="gambar/bijiliberika.jpg" alt="robusta" height="240px" width="240px">
-                    <h2>Liberika</h2>
-                    <p>Kopi dengan karakter unik dan aroma khas.</p>
-                </div>
+        <!-- <div class="container-sm uts color-1">
+            <h1>PRODUK DARI KAVORA</h1>
+        </div> -->
+        <div class="flex card-container">
+            <div class="card-kelompok7">
+                <img src="gambar/bijiarabika.jpg" alt="robusta" height="240px" width="240px">
+                <h2>Arabika</h2>
+                <p>Kopi dengan aroma harum dan cita rasa lembut.</p>
+            </div>
+            <div class="card-kelompok7">
+                <img src="gambar/bijirobusta.jpg" alt="robusta" height="240px" width="240px">
+                <h2>Robusta</h2>
+                <p>Kopi dengan karakter rasa kuat dan pekat.</p>
+            </div>
+            <div class="card-kelompok7">
+                <img src="gambar/bijiliberika.jpg" alt="robusta" height="240px" width="240px">
+                <h2>Liberika</h2>
+                <p>Kopi dengan karakter unik dan aroma khas.</p>
             </div>
         </div>
     </div>
+</div>
+<div class="container-sm uts color-1">
+    <h1 class="d-flex">PRODUK DARI KAVORA</h1>
+    <div class="row">
+        <div class="col-12">
+            test
+        </div>
+        <div class="row">
+            <div class="col-3">aaa</div>
+            <div class="col-6">aaaa</div>
+            <div class="col-3">aaa</div>
+        </div>
+    </div>
+    <div class="container-sm">
+        <div class="row g-3">
+            <div class="col-12 col-md-4 col-lg-3">
+                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100" alt="Gallery 1">
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100" alt="Gallery 2">
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100" alt="Gallery 3">
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100" alt="Gallery 4">
+            </div>
+        </div>
+    </div>
+</div>
