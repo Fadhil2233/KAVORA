@@ -32,6 +32,15 @@ body {
     background-color: #A3AD94;
     z-index: 999;
 }
+@media screen and (max-width: 767px) {
+    .nav-kelompok7-sm {
+    display: none;
+  }
+    .footer-kelompok7-sm {
+    display: none;
+  }
+}
+
 
 .nav-menu {
     justify-content: center;
@@ -142,8 +151,8 @@ margin-left: 10px;
 /* .card h1{
 } */
 
-/* .produk-form{
-
+/* .produk {
+    padding-bottom: 200px;
 } */
 
 .produk-form-kelompok7 input {
@@ -237,7 +246,7 @@ margin-left: 10px;
 
 .footer-grub {
     /* gap: 200px; */
-justify-content: space-between  ;
+    justify-content: space-between  ;
 }
 
 .footer-form {
@@ -297,6 +306,44 @@ justify-content: space-between  ;
 @media(min-width: 250px) and (max-width: 251px){
     .foto-uts-800{
         border-radius: 50%;
+    }
+    /* .foto-produk-uts{
+        border-radius: 50%;
+    } */
+}
+
+/* .map-container {
+    width: 100%;
+    height: 450px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+} */
+
+@media (max-width: 768px) {
+    .hero {
+        display: block;
+    }
+    .hero img {
+        display: none;
+    }
+    .container-kelompok7 {
+        height: 300px;
+    }
+    .container-kelompok7 iframe{
+        width: 500px;
+    }
+    .container-kelompok7 img{
+        width: 500px;
+    }
+    .container-kelompok7 h2{
+        display: none;
+    }
+    .container-kelompok7 p{
+        display: none;
     }
 }
 
