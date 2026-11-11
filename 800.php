@@ -18,10 +18,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <div class="landing-full-kelompok7 produk" id="produk">
     <!-- bagian nizhar -->
-    <div class="container-kelompok7 color-2 font-1">
+    <div class="container-sm color-2 font-1">
+        <h1 class="text-1">PRODUK KAMI</h1>
         <h1 class="text-1">PRODUK KAMI</h1>
         <div class="foto-uts-800 bg-primary">
-            Photo
+            <img src="gambar/Kavora1 4per3.png" alt="robusta" height="150px" width="150px" class="foto-uts-800">
         </div>
         <form action="kelompok7.php?page=produk" method="POST">
             <div class="produk-form-kelompok7">
@@ -53,10 +54,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p>Nama : <?= $NAMA ?> | Harga : <?= $HARGA ?> | Stok : <?= $STOK ?></p>
             <p>Kategori : <?= $KATEGORI ?> | Deskripsi : <?= $DESKRIPSI ?></p>
         <?php } ?>
+<div class="container-sm uts color-1">
+    <h1 class="d-flex">PRODUK DARI KAVORA</h1>
+    <div class="row">
+        <div class="col-12">
+            produk terbaik yang dipilih langsung
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6"></div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <div class="container-sm">
+        <div class="row g-3">
+            <div class="col-3 col-md-4 col-lg-3 foto-produk-uts">
+                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100" alt="Gallery 1">
+                <h2>Arabika</h2>
+                <p>Kopi dengan aroma harum dan cita rasa lembut.</p>
+            </div>
+            <div class="col-3 col-md-4 col-lg-3 foto-produk-uts">
+                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100" alt="Gallery 2">
+                <h2>Arabika</h2>
+                <p>Kopi dengan aroma harum dan cita rasa lembut.</p>
+            </div>
+            <div class="col-3 col-md-4 col-lg-3 foto-produk-uts">
+                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100" alt="Gallery 3">
+                <h2>Arabika</h2>
+                <p>Kopi dengan aroma harum dan cita rasa lembut.</p>
+            </div>
+            <div class="col-3 col-md-4 col-lg-3 foto-produk-uts">
+                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100 w-25-sm" alt="Gallery 4">
+                <h2>Arabika</h2>
+                <p>Kopi dengan aroma harum dan cita rasa lembut.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
         <!-- <div class="container-sm uts color-1">
             <h1>PRODUK DARI KAVORA</h1>
         </div> -->
-        <div class="flex card-container">
+        <!-- <div class="flex card-container">
             <div class="card-kelompok7">
                 <img src="gambar/bijiarabika.jpg" alt="robusta" height="240px" width="240px">
                 <h2>Arabika</h2>
@@ -72,35 +111,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <h2>Liberika</h2>
                 <p>Kopi dengan karakter unik dan aroma khas.</p>
             </div>
-        </div>
-    </div>
-</div>
-<div class="container-sm uts color-1">
-    <h1 class="d-flex">PRODUK DARI KAVORA</h1>
-    <div class="row">
-        <div class="col-12">
-            test
-        </div>
-        <div class="row">
-            <div class="col-3">aaa</div>
-            <div class="col-6">aaaa</div>
-            <div class="col-3">aaa</div>
-        </div>
-    </div>
-    <div class="container-sm">
-        <div class="row g-3">
-            <div class="col-12 col-md-4 col-lg-3">
-                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100" alt="Gallery 1">
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100" alt="Gallery 2">
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100" alt="Gallery 3">
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-                <img src="gambar/bijiarabika.jpg" class="img-fluid w-100" alt="Gallery 4">
-            </div>
-        </div>
+        </div> -->
     </div>
 </div>
